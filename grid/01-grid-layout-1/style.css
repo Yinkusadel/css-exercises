@@ -45,3 +45,33 @@ body, html {
 .footer {
   background-color: #393f4d;
 }
+
+
+/*                       answer                    */
+.container{
+  display: grid;
+  grid-template-columns: 200px 600px ;
+  grid-template-rows: 100px 100px 500px 100px;
+  gap: 15px;
+}
+
+.header {
+  grid-column: 1 / 4;
+}
+
+.sidebar {
+  grid-row: 2 / 4;
+}
+
+.nav {
+  grid-column: 2 / 4;
+}
+
+.article {
+  grid-area: 3 / 2 / 4 / 4;
+}
+
+.footer {
+  grid-row-start: 4;
+  grid-column: 1 / 4
+}
